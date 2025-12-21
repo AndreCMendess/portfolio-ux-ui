@@ -1,14 +1,18 @@
-#nome{
-    color: #0E0E0E;
-    font-size: 48px;
-    font-family: 'FiraSans',sans-serif; 
-    font-weight: 700;
-    line-height: 1.1;
+@import url(./header.css);
+
+body{
+    margin: 0px;
+    font-family: 'FiraSans',Arial,sans-serif;
+    color:#141414;
+    text-decoration: none;
+}
+
+h1,h2,h3,p {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
     display: block;
 }
 
-  @font-face {
-        font-family: 'FiraSans';
-        src: url('../css/fonts/FiraSans-Bold.ttf') format('truetype');
-        font-weight: 700;
-    }

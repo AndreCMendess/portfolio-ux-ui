@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    max-width: 1200px;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;   
+    gap:40px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #2E2E2E;
+    font-family: 'FiraSans', Arial ,sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+ul {
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#nome{
+    color: #0E0E0E;
+    font-size: 48px;
+    font-family: 'FiraSans',sans-serif; 
+    font-weight: 700;
+    line-height: 1.1;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        gap:40px;
+        padding: 40px;
+    }
+    
+    #nome {
+        font-size: 30px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+}
+
+  @font-face {
+        font-family: 'FiraSans';
+        src: url('../css/fonts/FiraSans-Bold.ttf') format('truetype');
+        font-weight: 700;
+    }
+
+    
+ 
