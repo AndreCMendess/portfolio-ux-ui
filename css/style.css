@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./introducao.css);
+@import url(./experiencia.css);
 
 body{
     margin: 0px;
@@ -15,5 +16,13 @@ h1,h2,h3,p {
 img {
     max-width: 100%;
     display: block;
+}
+
+.subtitulo {
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 1;
+    overflow-wrap: break-word;
+    max-width: 4ch;
 }
 
