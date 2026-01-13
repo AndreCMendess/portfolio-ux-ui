@@ -1,14 +1,17 @@
 .experiencia {
     max-width: 1200px;
-    margin:0 260px;
+    margin:0 auto;
     padding: 40px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.subtitulo experiencia {
+.experiencia .subtitulo {
     color:#DEDEDE;
+    text-align: left;
+    justify-self: start;
+    margin-left: 150px;
 }
 
 .sobre{
@@ -43,7 +46,7 @@
   display: flex;
   justify-content: center;
   background-color: #F7F7F7;
-  gap: 20px;
+  gap: 10px;
   padding: 30px;
   position: relative;
 }
@@ -131,12 +134,19 @@
 @media (max-width: 1172px) {
     .experiencia {
         grid-template-columns: 1fr;
-        gap:30px
+        gap:30px;  
+      
+    }
+
+    .subtitulo br {
+          display: none;
+          white-space: normal;
     }
 
     .experiencia .subtitulo {
-          max-width: 10ch;
-          white-space: normal;
+        text-align: center;
+        justify-self: start;
+        margin-left: 0px;
     }
 }
 
@@ -162,6 +172,16 @@
     .projeto-img {
         display: none;
     }
+
+    .projeto-info {
+    flex-direction: column;
+  }
+
+   .projeto-tecnologias {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 552px) {
@@ -173,6 +193,10 @@
     display: flex;
     flex-direction: column;
   }
+
+   .subtitulo {
+        font-size: 2rem !important;
+    }
 }
 
 @font-face {

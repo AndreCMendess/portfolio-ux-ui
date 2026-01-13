@@ -28,7 +28,7 @@ ul {
     list-style: none;
 }
 
-#nome{
+.nome{
     color: #0E0E0E;
     font-size: 48px;
     font-family: 'FiraSans',sans-serif; 
@@ -38,18 +38,25 @@ ul {
 }
 
 @media (max-width: 800px) {
-    .header {
-        flex-direction: column;
-        gap:40px;
-        padding: 40px;
+
+    .header {      
+        justify-content: center;
+        align-content: center;
     }
-    
-    #nome {
-        font-size: 30px;
+
+    .nome {
+        font-size: 4rem;   
+        text-align: center;  
     }
 
     .header-menu {
         display: none;
+    }
+}
+
+@media (max-width:400px) {
+     .nome {
+        font-size:2rem;     
     }
 }
 
