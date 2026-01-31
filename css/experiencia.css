@@ -31,15 +31,21 @@
     gap:28px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;  
+    padding: 50px 200px;  
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }
 
 .projeto {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     align-items: start;
     border-radius: 8px;
+    background-color: #141414;
 }
 
 .projeto-info {
@@ -103,16 +109,6 @@
     background-color: #70706f;
     padding: 5px 10px;
     text-align: center;
-}
-
-.projeto-img {
-    width: 80%;
-    height: 150px;
-    align-self: center;
-    overflow: hidden;
-    border: 8px;
-    background-color: #D9D9D9;
-    grid-row: 1;
 }
 
 .ano-projeto {
@@ -187,6 +183,10 @@
 @media (max-width: 552px) {
   .projeto-info {
     flex-direction: column;
+  }
+
+  .projetos {
+    padding:50px 20px;
   }
 
   .projeto-tecnologias {
